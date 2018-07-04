@@ -15,7 +15,7 @@ type rssFeedXml struct {
 	XMLName          xml.Name `xml:"rss"`
 	Version          string   `xml:"version,attr"`
 	ContentNamespace string   `xml:"xmlns:content,attr"`
-  MediaNamespace   string   `xml:"xmlns:media,attr"`
+	MediaNamespace   string   `xml:"xmlns:media,attr"`
 	Channel          *RssFeed
 }
 
@@ -169,6 +169,6 @@ func (r *RssFeed) FeedXml() interface{} {
 		Version:          "2.0",
 		Channel:          r,
 		ContentNamespace: "http://purl.org/rss/1.0/modules/content/",
-    MediaNamespace:   "http://search.yahoo.com/mrss/",
+		MediaNamespace:   "http://search.yahoo.com/mrss/",
 	}
 }
