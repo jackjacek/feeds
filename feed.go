@@ -187,3 +187,4 @@ func (f *Feed) WriteJSON(w io.Writer) error {
 	e.SetIndent("", "  ")
 	return e.Encode(feed)
 }
+
